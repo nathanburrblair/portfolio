@@ -14,6 +14,20 @@
         <h1>This is me.</h1>
         <p>I'm a web developer based in Salt Lake City, Utah. After spending the last decade working in SEO and digital marketing, I decided to start something new. I have a good eye for design and I'm eager to learn more and continously imporove. Take a look at my Work page to see what I've built so far.</p>
     </div>
+    <div class='dots'></div>
+    <div class='experience'>
+        <img src='../assets/chat.svg' alt="">
+        <!-- <img src='../assets/html-5.svg' alt="">
+        <img src='../assets/css.svg' alt="">
+        <img src='../assets/javascript.svg' alt="">
+        <img src='../assets/react.svg' alt="">
+        <img src='../assets/nodejs.svg' alt="">
+        <img src='../assets/github.svg' alt=""> -->
+    </div>
+    <div class='body_text_2'>
+        <p>I have experience with HTML, CSS, and Javascript. At DevMountain, I built my two projects with React, Node.js, PostgreSQL, and Express. I designed and built this very portfolio with Vue.js. There are a lot of languages I haven't got to yet, but I'm excited to learn.</p>
+        <router-link to='/work'><button>See My Work</button></router-link>
+    </div>
     <footer>
         <div class='social'>
             <a href='https://www.linkedin.com/in/nathanblair/' target='blank'><img src='../assets/linkedin-logoo.svg' alt=""></a>
@@ -82,16 +96,68 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 300px;
         margin-right: 30%;
         margin-left: 30%;
+        margin-top: 60px;
+        padding-bottom: 60px;
         font-family: 'Questrial', sans-serif;
         line-height: 24px;
         letter-spacing: .6px;
     }
 
+    .dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40%;
+        margin-left: 40%;
+        border-bottom: 5px solid #F6FAFC;
+        
+    }
+
     .body_text h1 {
         margin-bottom: 20px;
+    }
+
+    .body_text_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30%;
+        margin-left: 30%;
+        margin-bottom: 60px;
+        font-family: 'Questrial', sans-serif;
+        line-height: 24px;
+        letter-spacing: .6px;
+    }
+
+    .body_text_2 h1 {
+        margin-bottom: 20px;
+    }
+
+    .body_text_2 button {
+      color: #fff;
+      font-family: 'Questrial', sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: .6px;
+      text-transform: uppercase;
+      padding: 20px 40px 20px 40px;
+      margin-top: 40px;
+      border-radius: 3px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      background-color: #62A295;
+      border: none; 
+    }
+
+    .experience {
+        margin-top: 40px;
+    }
+
+    .experience img {
+        height: 80px;
+        margin: 20px;
     }
 
     footer {
