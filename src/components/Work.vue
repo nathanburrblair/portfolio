@@ -12,13 +12,13 @@
             <img src='../assets/mountain_right.svg' alt="">
         </div>
     </div>
-    <div class="work_text">
+    <div class="work_text" :class="$mq">
         <h1>Here's what I've been working on.</h1>
         <p>This is some of my most recent work. You can look on Github or some other sites.</p>
     </div>
     <div class='roasted'>
       <img src="../assets/work_roasted_phone_tablet.svg" alt="">
-      <div class="roasted_text">
+      <div class="roasted_text" :class="$mq">
         <h2>Roasted</h2>
         <h3>React / Redux / Node / Express / PostgreSQL</h3>
         <p>You know when you’re a coffee geek and you’re trying to remember that really good roast you had that one time but you can’t because you didn’t write down the name? I made Roasted for me, er ... that person while I was studying at DevMountain.</p>
@@ -32,7 +32,7 @@
     </div>
     <div class='devstack'>
       <img src="../assets/work_devstack.svg" alt="">
-      <div class="devstack_text">
+      <div class="devstack_text" :class="$mq">
         <h2>Dev Stack</h2>
         <h3>React / Redux / Node / Express / PostgreSQL</h3>
         <p>Dev Stack is an app where developers can connect with other developers. This project was a three person effort, where my responsibilities were mainly the homepage and much of the app design. It was built with React.js, Node.js, PostgreSQL, and Express.</p>
@@ -350,5 +350,68 @@ export default {
     .social {
         display: flex;
         margin: 20px;
+    }
+
+    /* Small media query */
+
+    .work_text.sm {
+      margin-right: 14%;
+      margin-left: 14%;
+    }
+
+    .work_text.sm h1 {
+      line-height: 34px;
+    }
+
+    .roasted_text.sm {
+      margin-right: 2%;
+      margin-left: 2%;
+    }
+
+    .devstack_text.sm {
+      margin-right: 2%;
+      margin-left: 2%;
+    }
+
+    /* Medium media query */
+
+    .work_text.md {
+      margin-right: 14%;
+      margin-left: 14%;
+    }
+
+    .work_text.md h1 {
+      line-height: 34px;
+    }
+
+    .roasted_text.md {
+      margin-right: 2%;
+      margin-left: 2%;
+    }
+
+    .devstack_text.md {
+      margin-right: 2%;
+      margin-left: 2%;
+    }
+
+    /* Large media query */
+
+    .work_text.lg {
+      margin-right: 28%;
+      margin-left: 28%;
+    }
+
+    .work_text.lg h1 {
+      line-height: 34px;
+    }
+
+    .roasted_text.lg {
+      margin-right: 22%;
+      margin-left: 22%;
+    }
+
+    .devstack_text.lg {
+      margin-right: 22%;
+      margin-left: 22%;
     }
 </style>

@@ -2,7 +2,7 @@
 <div>
     <HeaderNav />
     <div class="top">
-        <div class="welcome">
+        <div class="welcome" :class="$mq">
             <h1>Hi. I'm Nathan.</h1>
             <p>A web developer</p>
         </div>
@@ -10,11 +10,11 @@
             <img src="../assets/MountainHome.svg" alt="">
         </div>
     </div>
-    <div class="body_text">
+    <div class="body_text" :class="$mq">
         <h1>This is me.</h1>
         <p>I'm a web developer based in Salt Lake City, Utah. After spending the last decade working in SEO and digital marketing, I decided to start something new. I have a good eye for design and I'm eager to learn more and continously imporove. Take a look at my Work page to see what I've built so far.</p>
     </div>
-    <div class='dots'></div>
+    <div class='dots' :class="$mq"></div>
     <div class='experience'>
         <img src='../assets/chat.svg' alt="">
         <!-- <img src='../assets/html-5.svg' alt="">
@@ -24,7 +24,7 @@
         <img src='../assets/nodejs.svg' alt="">
         <img src='../assets/github.svg' alt=""> -->
     </div>
-    <div class='body_text_2'>
+    <div class='body_text_2' :class="$mq">
         <p>I have experience with HTML, CSS, and Javascript. At DevMountain, I built my two projects with React, Node.js, PostgreSQL, and Express. I designed and built this very portfolio with Vue.js. There are a lot of languages I haven't got to yet, but I'm excited to learn.</p>
         <router-link to='/work'><button>See My Work</button></router-link>
     </div>
@@ -49,7 +49,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="postcss">
     @import url('https://fonts.googleapis.com/css?family=Questrial');
     @import url('https://fonts.googleapis.com/css?family=Antic+Slab');
 
@@ -109,10 +109,9 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 40%;
-        margin-left: 40%;
-        border-bottom: 5px solid #F6FAFC;
-        
+        margin-right: 45%;
+        margin-left: 45%;
+        border-bottom: 5px dotted #2c3e50;
     }
 
     .body_text h1 {
@@ -148,7 +147,7 @@ export default {
       border-radius: 3px;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
       background-color: #62A295;
-      border: none; 
+      border: none;
     }
 
     .experience {
@@ -185,5 +184,55 @@ export default {
     .social {
         display: flex;
         margin: 20px;
+    }
+
+    /* Small media query */
+
+    .welcome.sm h1 {
+        font-size: 46px;
+    }
+
+    .body_text.sm {
+        margin-right: 14%;
+        margin-left: 14%;
+    }
+
+     .body_text_2.sm {
+        margin-right: 14%;
+        margin-left: 14%;
+    }
+
+    /* Medium media query */
+
+    .body_text.md {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+     .body_text_2.md {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+      .dots.md {
+        margin-right: 48%;
+        margin-left: 48%;
+    }
+
+     /* Large media query */
+
+    .body_text.lg {
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+
+     .body_text_2.lg {
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+
+    .dots.lg {
+        margin-right: 48%;
+        margin-left: 48%;
     }
 </style>

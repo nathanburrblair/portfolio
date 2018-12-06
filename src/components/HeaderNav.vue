@@ -1,14 +1,16 @@
 <template>
     <div id='nav'>
-        <div>
-            <router-link to='/'><h1>n.b.</h1></router-link>
-        </div>
-        <div>
-            <ol>
-                <li>About</li>
-                <router-link to='/work'><li>Work</li></router-link>
-                <li>Contact</li>
-            </ol>
+        <div class='nav_container'>
+            <div>
+                <router-link to='/'><h1>n.b.</h1></router-link>
+            </div>
+            <div>
+                <ol class="nav_list" :class="$mq">
+                    <router-link to='/'><li>About</li></router-link>
+                    <router-link to='/work'><li>Work</li></router-link>
+                    <a href="mailto:nathanburrblair@gmail.com"><li>Contact</li></a>
+                </ol>
+            </div>
         </div>
     </div>
 </template>
@@ -31,12 +33,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="postcss">
     @import url('https://fonts.googleapis.com/css?family=Questrial');
     @import url('https://fonts.googleapis.com/css?family=Antic+Slab');
+
     #nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         font-family: 'Questrial', sans-serif;
         background-color: #F6FAFC;
@@ -47,24 +50,33 @@ export default {
         transition: top 0.4s;
     }
 
-    #nav img {
-        width: 50px;
-        height: 50px;
-    }
-
     #nav h1 {
         font-family: 'Antic Slab', serif;
         font-size: 48px;
     }
 
-    ol {
+    .nav_container {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-right: 5%;
+        margin-left: 7%;
+    }
+
+    .nav_list {
+        display: flex;
+        flex-direction: row;
         justify-content: space-around;
         width: 30vw;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     li {
         list-style-type: none;
+        margin-right: 7px;
+        margin-left: 7px;
     }
 
     a {
@@ -74,5 +86,17 @@ export default {
 
     a:visited {
         color: #2c3e50;
+    }
+
+    /* Small media query */
+
+    .nav_list.sm {
+        width: 40vw;
+    }
+
+    /* Large Media Query */
+
+    .nav_list.lg {
+        width: 20vw;
     }
 </style>
