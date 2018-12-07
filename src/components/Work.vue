@@ -14,16 +14,16 @@
     </div>
     <div class="work_text" :class="$mq">
         <h1>Here's what I've been working on.</h1>
-        <p>This is some of my most recent work. You can look on Github or some other sites.</p>
+        <p>This is my most recent work. Each project below has a link to the live site and the GitHub repository.</p>
     </div>
     <div class='roasted'>
       <img src="../assets/work_roasted_phone_tablet.svg" alt="">
       <div class="roasted_text" :class="$mq">
         <h2>Roasted</h2>
         <h3>React / Redux / Node / Express / PostgreSQL</h3>
-        <p>You know when you’re a coffee geek and you’re trying to remember that really good roast you had that one time but you can’t because you didn’t write down the name? I made Roasted for me, er ... that person while I was studying at DevMountain.</p>
+        <p>You know when you’re a coffee geek and you’re trying to remember that really good roast you had that one time but you can’t because you didn’t write down the name? I made Roasted for me, er ... that person, while I was studying at DevMountain.</p>
 
-        <p>Roasted lets you check in and record your thoughts about what you’re drinking. There’s also a store where you can go through a checkout process. Roasted is a responsive, full stack app built with React.js. Awarded “Best CSS” by DevMountain.</p>
+        <p>Roasted lets you check in and record your thoughts about what you’re drinking. There’s also a store where you can go through a checkout process. Roasted is a responsive, full stack app built with React.js. It was awarded “Best CSS” by DevMountain.</p>
       </div>
       <div class='roasted_buttons'>
         <a href='https://www.roastedstore.com' target='blank'><button class='roasted_website'>Visit Roasted</button></a>
@@ -330,12 +330,12 @@ export default {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 20vh;
+        /* height: 20vh; */
         background-color: #F6FAFC;
     }
 
     footer p {
-        margin-bottom: 20px;
+        margin-bottom: 60px;
         color: #83919f;
         font-family: 'Questrial', sans-serif;
         line-height: 24px;
@@ -349,7 +349,7 @@ export default {
 
     .social {
         display: flex;
-        margin: 20px;
+        margin-top: 60px;
     }
 
     /* Small media query */
