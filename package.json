@@ -13,6 +13,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.7",
     "vue": "^2.5.2",
     "vue-mq": "^0.2.1",
     "vue-router": "^3.0.1"
