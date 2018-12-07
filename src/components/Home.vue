@@ -11,10 +11,12 @@
         </div>
     </div>
     <div class="body_text" :class="$mq">
-        <h1>This is me.</h1>
-        <p>I'm a web developer based in Salt Lake City, Utah. After spending the last decade working in SEO and digital marketing, I decided to start something new. I have a good eye for design and I'm eager to learn more and continously imporove. Take a look at my Work page to see what I've built so far.</p>
+        <!-- <h1>This is me.</h1> -->
+        <!-- <img src='../assets/headshotsvg.svg' alt=""> -->
+        <img src='../assets/headshotsquare.svg' alt="">
+        <p>I'm a web developer based in Salt Lake City, Utah. After spending the last decade working in SEO and digital marketing, I decided to start something new by enrolling in a web developer bootcamp. It was a good beginning to what I hope will be a long and fulfilling career. When I'm not in front of my computer, you might find me exploring the Wasatch, riding a bike, or reading a good book.</p>
     </div>
-    <div class='dots' :class="$mq"></div>
+    <!-- <div class='dots' :class="$mq"></div> -->
     <div class='experience'>
         <img src='../assets/chat.svg' alt="">
         <!-- <img src='../assets/html-5.svg' alt="">
@@ -25,7 +27,7 @@
         <img src='../assets/github.svg' alt=""> -->
     </div>
     <div class='body_text_2' :class="$mq">
-        <p>I have experience with HTML, CSS, and Javascript. At DevMountain, I built my two projects with React, Node.js, PostgreSQL, and Express. I designed and built this very portfolio with Vue.js. There are a lot of languages I haven't got to yet, but I'm excited to learn.</p>
+        <p>I have experience with HTML, CSS, and Javascript. At DevMountain (the bootcamp I mentioned earlier), I built two projects with React, Node.js, PostgreSQL, and Express. I also designed and built this very portfolio with Vue.js. There are a lot of languages I haven't got to yet, but I'm excited to learn.</p>
         <router-link to='/work'><button>See My Work</button></router-link>
     </div>
     <footer>
@@ -99,7 +101,7 @@ export default {
         margin-right: 30%;
         margin-left: 30%;
         margin-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 20px;
         font-family: 'Questrial', sans-serif;
         line-height: 24px;
         letter-spacing: .6px;
@@ -116,6 +118,12 @@ export default {
 
     .body_text h1 {
         margin-bottom: 20px;
+    }
+
+    .body_text img {
+        height: 90px;
+        width: 90px;
+        margin-bottom: 24px;
     }
 
     .body_text_2 {
