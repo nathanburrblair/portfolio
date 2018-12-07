@@ -172,12 +172,11 @@ export default {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 20vh;
         background-color: #F6FAFC;
     }
 
     footer p {
-        margin-bottom: 20px;
+        margin-bottom: 60px;
         color: #83919f;
         font-family: 'Questrial', sans-serif;
         line-height: 24px;
@@ -191,7 +190,8 @@ export default {
 
     .social {
         display: flex;
-        margin: 20px;
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
 
     /* Small media query */

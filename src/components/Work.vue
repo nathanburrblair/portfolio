@@ -63,7 +63,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="postcss">
     @import url('https://fonts.googleapis.com/css?family=Questrial');
     @import url('https://fonts.googleapis.com/css?family=Antic+Slab');
 
@@ -87,15 +87,6 @@ export default {
         font-size: 28px;
         letter-spacing: .8px;
     }
-
-     /* .work_welcome img {
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .work_welcome h1 {
-      margin-bottom: 170px;
-    } */
 
     .work_hero {
         background-color: #F6FAFC;
@@ -330,7 +321,6 @@ export default {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* height: 20vh; */
         background-color: #F6FAFC;
     }
 
@@ -350,6 +340,7 @@ export default {
     .social {
         display: flex;
         margin-top: 60px;
+        margin-bottom: 20px;
     }
 
     /* Small media query */
