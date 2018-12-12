@@ -8,7 +8,9 @@
                 <ol class="nav_list" :class="$mq">
                     <router-link to='/'><li>About</li></router-link>
                     <router-link to='/work'><li>Work</li></router-link>
-                    <a href="mailto:nathanburrblair@gmail.com"><li>Contact</li></a>
+                    <a href="#skills"><li>Skills</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                    <!-- <a href="mailto:nathanburrblair@gmail.com"><li>Contact</li></a> -->
                 </ol>
             </div>
         </div>
@@ -91,7 +93,7 @@ export default {
     /* Small media query */
 
     .nav_list.sm {
-        width: 40vw;
+        width: 47vw;
     }
 
     /* Large Media Query */

@@ -1,23 +1,23 @@
 <template>
   <div>
-    <HeaderNav />
-       <div class="work_top">
-        <div class="work_welcome">
-            <!-- <img src='../assets/mountain_left.svg' alt=""> -->
-            <h1>Work</h1>
-            <!-- <img src='../assets/mountain_right.svg' alt=""> -->
-        </div>
-        <div class='mountains'>
-            <img src='../assets/mountain_left.svg' alt="">
-            <img src='../assets/mountain_right.svg' alt="">
-        </div>
+    <HeaderNav/>
+    <div class="work_top">
+      <div class="work_welcome" :class="$mq">
+        <!-- <img src='../assets/mountain_left.svg' alt=""> -->
+        <h1>Work</h1>
+        <!-- <img src='../assets/mountain_right.svg' alt=""> -->
+      </div>
+      <div class="mountains">
+        <img src="../assets/mountain_left.svg" alt>
+        <img src="../assets/mountain_right.svg" alt>
+      </div>
     </div>
     <div class="work_text" :class="$mq">
-        <h1>Here's what I've been working on.</h1>
-        <p>This is my most recent work. Each project below has a link to the live site and the GitHub repository.</p>
+      <h1>Here's what I've been working on.</h1>
+      <p>This is my most recent work. Each project below has a link to the live site and the GitHub repository.</p>
     </div>
-    <div class='roasted'>
-      <img src="../assets/work_roasted_phone_tablet.svg" alt="">
+    <div class="roasted">
+      <img src="../assets/work_roasted_phone_tablet.svg" alt>
       <div class="roasted_text" :class="$mq">
         <h2>Roasted</h2>
         <h3>React / Redux / Node / Express / PostgreSQL</h3>
@@ -25,384 +25,427 @@
 
         <p>Roasted lets you check in and record your thoughts about what you’re drinking. There’s also a store where you can go through a checkout process. Roasted is a responsive, full stack app built with React.js. It was awarded “Best CSS” by DevMountain.</p>
       </div>
-      <div class='roasted_buttons'>
-        <a href='https://www.roastedstore.com' target='blank'><button class='roasted_website'>Visit Roasted</button></a>
-        <a href='https://github.com/nathanburrblair/nathans-personal-project' target='blank'><button class='roasted_github'>GitHub Repo</button></a>
+      <div class="roasted_buttons">
+        <a href="https://www.roastedstore.com" target="blank">
+          <button class="roasted_website">Visit Roasted</button>
+        </a>
+        <a href="https://github.com/nathanburrblair/nathans-personal-project" target="blank">
+          <button class="roasted_github">GitHub Repo</button>
+        </a>
       </div>
     </div>
-    <div class='devstack'>
-      <img src="../assets/work_devstack.svg" alt="">
+    <div class="devstack">
+      <img src="../assets/work_devstack.svg" alt>
       <div class="devstack_text" :class="$mq">
         <h2>Dev Stack</h2>
         <h3>React / Redux / Node / Express / PostgreSQL</h3>
         <p>Dev Stack is an app where developers can connect with other developers. This project was a three person effort, where my responsibilities were mainly the homepage and much of the app design. It was built with React.js, Node.js, PostgreSQL, and Express.</p>
       </div>
-      <div class='devstack_buttons'>
-        <a href='https://dev-stack.org' target='blank'><button class='devstack_website'>Visit Dev Stack</button></a>
-        <a href='https://github.com/dev-sm-app/dev-app' target='blank'><button class='devstack_github'>GitHub Repo</button></a>
+      <div class="devstack_buttons">
+        <a href="https://dev-stack.org" target="blank">
+          <button class="devstack_website">Visit Dev Stack</button>
+        </a>
+        <a href="https://github.com/dev-sm-app/dev-app" target="blank">
+          <button class="devstack_github">GitHub Repo</button>
+        </a>
       </div>
     </div>
-    <footer>
-        <div class='social'>
-            <a href='https://www.linkedin.com/in/nathanblair/' target='blank'><img src='../assets/linkedin-logoo.svg' alt=""></a>
-            <a href='https://github.com/nathanburrblair' target='blank'><img src='../assets/github-logoo.svg' alt=""></a>
-            <a href="mailto:nathanburrblair@gmail.com"><img src='../assets/close-envelop.svg' alt=""></a>
+    <a name="contact">
+      <footer :class="$mq">
+        <h1>Contact Me.</h1>
+        <p>Click on the envelope to send me an email. You can find me on LinkedIn and GitHub too.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/nathanblair/" target="blank">
+            <img src="../assets/linkedin-logoo.svg" alt>
+          </a>
+          <a href="https://github.com/nathanburrblair" target="blank">
+            <img src="../assets/github-logoo.svg" alt>
+          </a>
+          <a href="mailto:nathanburrblair@gmail.com">
+            <img src="../assets/close-envelop.svg" alt>
+          </a>
         </div>
-        <p>© 2018 Nathan Blair. All rights reserved.</p>
-    </footer>
+        <!-- <p>© 2018 Nathan Blair. All rights reserved.</p> -->
+      </footer>
+    </a>
   </div>
 </template>
 
 <script>
-import HeaderNav from '../components/HeaderNav'
+import HeaderNav from "../components/HeaderNav";
 export default {
-  name: 'Work',
+  name: "Work",
   components: {
-    'HeaderNav': HeaderNav
+    HeaderNav: HeaderNav
   }
-}
+};
 </script>
 
 <style lang="postcss">
-    @import url('https://fonts.googleapis.com/css?family=Questrial');
-    @import url('https://fonts.googleapis.com/css?family=Antic+Slab');
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+@import url("https://fonts.googleapis.com/css?family=Antic+Slab");
 
-    * {
-        margin: 0;
-    }
+* {
+  margin: 0;
+}
 
-  .work_top {
-        background-color: #F6FAFC;
-        padding-top: 16vh;
-    }
+.work_top {
+  background-color: #f6fafc;
+  padding-top: 16vh;
+}
 
-  .work_welcome {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-end;
-        height: 200px;
-        background-color: #F6FAFC;
-        font-family: 'Antic Slab', serif;
-        font-size: 28px;
-        letter-spacing: .8px;
-    }
+.work_welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 200px;
+  background-color: #f6fafc;
+  font-family: "Antic Slab", serif;
+  font-size: 28px;
+  letter-spacing: 0.8px;
+}
 
-    .work_hero {
-        background-color: #F6FAFC;
-        max-width: 800px;
-        margin: 0 auto;
-    }
+.work_hero {
+  background-color: #f6fafc;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-    .work_text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-        margin-right: 30%;
-        margin-left: 30%;
-        font-family: 'Questrial', sans-serif;
-        line-height: 24px;
-        letter-spacing: .6px;
-    }
+.work_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-right: 30%;
+  margin-left: 30%;
+  font-family: "Questrial", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+}
 
-    .work_text h1 {
-        margin-bottom: 20px;
-    }
+.work_text h1 {
+  margin-bottom: 20px;
+}
 
-    .mountains {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
+.mountains {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .mountains img {
-      width: 100%;
-      max-height: 200px;
-      max-width: 50%;
-    }
+.mountains img {
+  width: 100%;
+  max-height: 200px;
+  max-width: 50%;
+}
 
-  /* Roasted */
+/* Roasted */
 
-    .roasted {
-      background-color: #806A5B;
-      padding-top: 60px;
-      padding-bottom: 60px;
-      padding-left: 10%;
-      padding-right: 10%;
-    }
+.roasted {
+  background-color: #806a5b;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
-    .roasted img {
-      max-width: 800px;
-      width: 100%;
-      margin: 0 auto;
-    }
+.roasted img {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-    .roasted_text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-family: 'Questrial', sans-serif;
-      line-height: 24px;
-      letter-spacing: .6px;
-      margin-right: 20%;
-      margin-left: 20%;
-      margin-top: 40px;
-    }
+.roasted_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Questrial", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 40px;
+}
 
-    .roasted_text h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
+.roasted_text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 
-    .roasted_text p {
-      margin-top: 16px;
-      margin-bottom: 16px;
-    }
+.roasted_text p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 
-    .roasted button {
-      color: #fff;
-      font-family: 'Questrial', sans-serif;
-      font-size: 18px;
-      line-height: 24px;
-      letter-spacing: .6px;
-      text-transform: uppercase;
-      padding: 20px 40px 20px 40px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      border-radius: 3px;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    }
+.roasted button {
+  color: #fff;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 20px 40px 20px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .roasted_buttons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+.roasted_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    .roasted_website {
-      background-color: #425055;
-      border: none;
-    }
+.roasted_website {
+  background-color: #425055;
+  border: none;
+}
 
-    .roasted_website:focus {
-      outline: 0;
-    }
+.roasted_website:focus {
+  outline: 0;
+}
 
-    .roasted_website:hover {
-      background-color: #3E4A4F;
-      cursor: pointer;
-    }
+.roasted_website:hover {
+  background-color: #3e4a4f;
+  cursor: pointer;
+}
 
-    .roasted_website:active {
-      transform: translateY(2px);
-    }
+.roasted_website:active {
+  transform: translateY(2px);
+}
 
-    .roasted_github {
-      background-color: #806A5B;
-      border: 1px solid #fff;
-    }
+.roasted_github {
+  background-color: #806a5b;
+  border: 1px solid #fff;
+}
 
-    .roasted_github:focus {
-      outline: 0;
-    }
+.roasted_github:focus {
+  outline: 0;
+}
 
-    .roasted_github:hover {
-      background-color: #756255;
-      cursor: pointer;
-    }
+.roasted_github:hover {
+  background-color: #756255;
+  cursor: pointer;
+}
 
-    .roasted_github:active {
-      transform: translateY(2px);
-    }
+.roasted_github:active {
+  transform: translateY(2px);
+}
 
-    /* Dev Stack */
+/* Dev Stack */
 
-    .devstack {
-      background-color: #292929;
-      padding-top: 60px;
-      padding-bottom: 60px;
-      padding-left: 10%;
-      padding-right: 10%;
-    }
+.devstack {
+  background-color: #292929;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
-    .devstack img {
-      max-width: 800px;
-      width: 100%;
-      margin: 0 auto;
-    }
+.devstack img {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-    .devstack_text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-family: 'Questrial', sans-serif;
-      line-height: 24px;
-      letter-spacing: .6px;
-      margin-right: 20%;
-      margin-left: 20%;
-      margin-top: 40px;
-    }
+.devstack_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Questrial", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 40px;
+}
 
-    .devstack_text h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
+.devstack_text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 
-    .devstack_text p {
-      margin-top: 16px;
-      margin-bottom: 16px;
-    }
+.devstack_text p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 
-    .devstack button {
-      color: #fff;
-      font-family: 'Questrial', sans-serif;
-      font-size: 18px;
-      line-height: 24px;
-      letter-spacing: .6px;
-      text-transform: uppercase;
-      padding: 20px 40px 20px 40px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      border-radius: 3px;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    }
+.devstack button {
+  color: #fff;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 20px 40px 20px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .devstack_buttons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+.devstack_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    .devstack_website {
-      background-color: #00A4F3;
-      border: none;
-    }
+.devstack_website {
+  background-color: #00a4f3;
+  border: none;
+}
 
-    .devstack_website:focus {
-      outline: 0;
-    }
+.devstack_website:focus {
+  outline: 0;
+}
 
-    .devstack_website:hover {
-      background-color: #0198E1;
-      cursor: pointer;
-    }
+.devstack_website:hover {
+  background-color: #0198e1;
+  cursor: pointer;
+}
 
-    .devstack_website:active {
-      transform: translateY(2px);
-    }
+.devstack_website:active {
+  transform: translateY(2px);
+}
 
-    .devstack_github {
-      background-color: #292929;
-      border: 1px solid #fff;
-    }
+.devstack_github {
+  background-color: #292929;
+  border: 1px solid #fff;
+}
 
-    .devstack_github:focus {
-      outline: 0;
-    }
+.devstack_github:focus {
+  outline: 0;
+}
 
-    .devstack_github:hover {
-      background-color: #1E1E1E;
-      cursor: pointer;
-    }
+.devstack_github:hover {
+  background-color: #1e1e1e;
+  cursor: pointer;
+}
 
-    .devstack_github:active {
-      transform: translateY(2px);
-    }
+.devstack_github:active {
+  transform: translateY(2px);
+}
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #F6FAFC;
-    }
+footer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6fafc;
+}
 
-    footer p {
-        margin-bottom: 60px;
-        color: #83919f;
-        font-family: 'Questrial', sans-serif;
-        line-height: 24px;
-        letter-spacing: .6px;
-    }
+footer h1 {
+  font-family: "Antic Slab", serif;
+  font-size: 46px;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+}
 
-    footer img {
-        height: 30px;
-        margin: 5px;
-    }
+footer p {
+  margin-bottom: 20px;
+  font-family: "Questrial", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+}
 
-    .social {
-        display: flex;
-        margin-top: 60px;
-        margin-bottom: 20px;
-    }
+footer img {
+  height: 40px;
+  margin: 5px;
+}
 
-    /* Small media query */
+.social {
+  display: flex;
+  margin-bottom: 20px;
+}
 
-    .work_text.sm {
-      margin-right: 14%;
-      margin-left: 14%;
-    }
+/* Small media query */
 
-    .work_text.sm h1 {
-      line-height: 34px;
-    }
+.work_welcome.sm h1 {
+  font-size: 46px;
+}
 
-    .roasted_text.sm {
-      margin-right: 2%;
-      margin-left: 2%;
-    }
+.work_text.sm {
+  margin-right: 14%;
+  margin-left: 14%;
+}
 
-    .devstack_text.sm {
-      margin-right: 2%;
-      margin-left: 2%;
-    }
+.work_text.sm h1 {
+  line-height: 34px;
+}
 
-    /* Medium media query */
+.roasted_text.sm {
+  margin-right: 2%;
+  margin-left: 2%;
+}
 
-    .work_text.md {
-      margin-right: 14%;
-      margin-left: 14%;
-    }
+.devstack_text.sm {
+  margin-right: 2%;
+  margin-left: 2%;
+}
 
-    .work_text.md h1 {
-      line-height: 34px;
-    }
+footer.sm p {
+  margin-right: 14%;
+  margin-left: 14%;
+}
 
-    .roasted_text.md {
-      margin-right: 2%;
-      margin-left: 2%;
-    }
+/* Medium media query */
 
-    .devstack_text.md {
-      margin-right: 2%;
-      margin-left: 2%;
-    }
+.work_text.md {
+  margin-right: 14%;
+  margin-left: 14%;
+}
 
-    /* Large media query */
+.work_text.md h1 {
+  line-height: 34px;
+}
 
-    .work_text.lg {
-      margin-right: 28%;
-      margin-left: 28%;
-    }
+.roasted_text.md {
+  margin-right: 2%;
+  margin-left: 2%;
+}
 
-    .work_text.lg h1 {
-      line-height: 34px;
-    }
+.devstack_text.md {
+  margin-right: 2%;
+  margin-left: 2%;
+}
 
-    .roasted_text.lg {
-      margin-right: 22%;
-      margin-left: 22%;
-    }
+footer.md p {
+  margin-right: 20%;
+  margin-left: 20%;
+}
 
-    .devstack_text.lg {
-      margin-right: 22%;
-      margin-left: 22%;
-    }
+/* Large media query */
+
+.work_text.lg {
+  margin-right: 28%;
+  margin-left: 28%;
+}
+
+.work_text.lg h1 {
+  line-height: 34px;
+}
+
+.roasted_text.lg {
+  margin-right: 22%;
+  margin-left: 22%;
+}
+
+.devstack_text.lg {
+  margin-right: 22%;
+  margin-left: 22%;
+}
+
+footer.lg p {
+  margin-right: 35%;
+  margin-left: 35%;
+}
 </style>
