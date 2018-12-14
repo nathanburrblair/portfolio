@@ -1,11 +1,12 @@
-import Vue from "vue";
-import Router from "vue-router";
-import Home from "@/components/Home";
-import HeaderNav from "@/components/HeaderNav";
-import Work from "@/components/Work";
-import VueMq from "vue-mq";
+import Vue from 'vue'
+import Router from 'vue-router'
+import Home from '@/components/Home'
+import HeaderNav from '@/components/HeaderNav'
+import Work from '@/components/Work'
+import Skills from '@/components/Skills'
+import VueMq from 'vue-mq'
 
-Vue.use(Router);
+Vue.use(Router)
 
 Vue.use(VueMq, {
   breakpoints: {
@@ -13,7 +14,7 @@ Vue.use(VueMq, {
     md: 992,
     lg: Infinity
   }
-});
+})
 
 export default new Router({
   routes: [
@@ -31,6 +32,11 @@ export default new Router({
       path: '/work',
       name: 'Work',
       component: Work
+    },
+    {
+      path: '/skills',
+      name: 'Skills',
+      component: Skills
     }
   ],
   scrollBehavior (to, from, savedPosition) {

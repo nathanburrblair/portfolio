@@ -8,7 +8,7 @@
                 <ol class="nav_list" :class="$mq">
                     <router-link to='/'><li>About</li></router-link>
                     <router-link to='/work'><li>Work</li></router-link>
-                    <a href="#skills"><li>Skills</li></a>
+                    <router-link to='/skills'><li>Skills</li></router-link>
                     <a href="#contact"><li>Contact</li></a>
                     <!-- <a href="mailto:nathanburrblair@gmail.com"><li>Contact</li></a> -->
                 </ol>
