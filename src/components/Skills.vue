@@ -14,14 +14,32 @@
     </div>
     <div class="skills_text" :class="$mq">
       <!-- <h1>Here's what I've been working on.</h1> -->
-        <a name="skills"><div class="tech">
-        <img src='../assets/html-5.svg' alt="">
-        <img src='../assets/css.svg' alt="">
-        <img src='../assets/javascript.svg' alt="">
-        <img src='../assets/react.svg' alt="">
-        <img src='../assets/nodejs.svg' alt="">
-      <img src='../assets/github.svg' alt="">
-    </div></a>
+        <div class="tech" :class="$mq">
+          <div>
+            <img src="../assets/html-5.svg" alt="html 5">
+            <p>HTML</p>
+          </div>
+          <div>
+            <img src="../assets/css.svg" alt="css 3">
+            <p>CSS</p>
+          </div>
+          <div>
+            <img src="../assets/javascript.svg" alt="javascript">
+            <p>Javascript</p>
+          </div>
+          <div>
+            <img src="../assets/react.svg" alt="react">
+            <p>React</p>
+          </div>
+          <div>
+            <img src="../assets/nodejs.svg" alt="nodejs">
+            <p>Node</p>
+          </div>
+          <div>
+            <img src="../assets/github.svg" alt="github">
+            <p>GitHub</p>
+          </div>
+        </div>
       <p>I have experience with HTML, CSS, and Javascript. At DevMountain (the bootcamp I attended), I built two projects with React, Node.js, PostgreSQL, and Express. I also designed and built this very portfolio with Vue.js. There are a lot of languages I haven't got to yet, but I'm excited to learn.</p>
     </div>
     <a name="contact">
@@ -100,11 +118,20 @@ export default {
 
 .tech {
   margin-top: 60px;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 26px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
 }
 
 .tech img {
   height: 60px;
-  margin: 20px;
+  margin: 20px 20px 0 20px;
+}
+
+.tech p {
+  font-size: 12px;
 }
 
 .mountains {
@@ -166,6 +193,14 @@ footer img {
 
 .skills_text.sm h1 {
   line-height: 34px;
+}
+
+.tech.sm {
+  margin-top: 60px;
+  margin-right: 30%;
+  margin-left: 30%;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
 }
 
 footer.sm p {
