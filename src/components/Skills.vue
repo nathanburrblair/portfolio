@@ -64,13 +64,13 @@
 </template>
 
 <script>
-import HeaderNav from "../components/HeaderNav";
+import HeaderNav from '../components/HeaderNav'
 export default {
-  name: "Skills",
+  name: 'Skills',
   components: {
     HeaderNav: HeaderNav
   }
-};
+}
 </script>
 
 <style lang="postcss">

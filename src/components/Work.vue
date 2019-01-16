@@ -17,7 +17,7 @@
       <p>This is my most recent work. Each project below has a link to the live site and the GitHub repository.</p>
     </div>
     <div class="roasted">
-      <img src="../assets/work_roasted_phone_tablet.svg" alt>
+      <img src="../assets/work-roasted.png" alt>
       <div class="roasted_text" :class="$mq">
         <h2>Roasted</h2>
         <h3>React / Redux / Node / Express / PostgreSQL</h3>
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="devstack">
-      <img src="../assets/work_devstack.svg" alt>
+      <img src="../assets/work-devstack.png" alt>
       <div class="devstack_text" :class="$mq">
         <h2>Dev Stack</h2>
         <h3>React / Redux / Node / Express / PostgreSQL</h3>
