@@ -19,7 +19,7 @@
         <div class="swpc">
       <img src="../assets/work-swpco.png" alt>
       <div class="swpc_text" :class="$mq">
-        <h2>Soil & Water Plant Company</h2>
+        <h2>Soil & Water<br>Plant Co.</h2>
         <h3>React / Node / Express / PostgreSQL</h3>
         <p>Soil and Water Plant Company exists only in my imagination, but this is the website I built for them anyway.</p>
 
@@ -121,7 +121,6 @@ export default {
   background-color: #f6fafc;
   font-family: "Antic Slab", serif;
   font-size: 28px;
-  letter-spacing: 0.8px;
 }
 
 .work_hero {
@@ -140,7 +139,6 @@ export default {
   margin-left: 30%;
   font-family: "Questrial", sans-serif;
   line-height: 24px;
-  letter-spacing: 0.6px;
 }
 
 .work_text h1 {
@@ -214,18 +212,18 @@ export default {
   color: #fff;
   font-family: "Questrial", sans-serif;
   line-height: 24px;
-  letter-spacing: 0.6px;
   margin-right: 20%;
   margin-left: 20%;
   margin-top: 40px;
 }
 
-.roasted_text h2, .swpc h2 {
+.roasted_text h2, .swpc_text h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  line-height: 38px;
 }
 
-.roasted_text p, .swpc p {
+.roasted_text p, .swpc_text p {
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -235,7 +233,6 @@ export default {
   font-family: "Questrial", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.6px;
   text-transform: uppercase;
   padding: 20px 40px 20px 40px;
   margin-top: 20px;
@@ -310,7 +307,6 @@ export default {
   color: #fff;
   font-family: "Questrial", sans-serif;
   line-height: 24px;
-  letter-spacing: 0.6px;
   margin-right: 20%;
   margin-left: 20%;
   margin-top: 40px;
@@ -331,7 +327,6 @@ export default {
   font-family: "Questrial", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.6px;
   text-transform: uppercase;
   padding: 20px 40px 20px 40px;
   margin-top: 20px;
@@ -394,7 +389,6 @@ footer {
 footer h1 {
   font-family: "Antic Slab", serif;
   font-size: 46px;
-  letter-spacing: 0.8px;
   margin-bottom: 20px;
 }
 
@@ -402,7 +396,6 @@ footer p {
   margin-bottom: 20px;
   font-family: "Questrial", sans-serif;
   line-height: 24px;
-  letter-spacing: 0.6px;
 }
 
 footer img {
@@ -435,6 +428,11 @@ footer img {
   margin-left: 2%;
 }
 
+.swpc_text.sm {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
 .devstack_text.sm {
   margin-right: 2%;
   margin-left: 2%;
@@ -461,6 +459,11 @@ footer.sm p {
   margin-left: 2%;
 }
 
+.swpc_text.md {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
 .devstack_text.md {
   margin-right: 2%;
   margin-left: 2%;
@@ -483,6 +486,11 @@ footer.md p {
 }
 
 .roasted_text.lg {
+  margin-right: 22%;
+  margin-left: 22%;
+}
+
+.swpc_text.lg {
   margin-right: 22%;
   margin-left: 22%;
 }
