@@ -85,7 +85,6 @@ export default {
   background-color: #f6fafc;
   font-family: "Antic Slab", serif;
   font-size: 28px;
-  letter-spacing: 0.8px;
 }
 
 .inspiration_text {
@@ -98,7 +97,6 @@ export default {
   margin-left: 30%;
   font-family: "Questrial", sans-serif;
   line-height: 24px;
-  letter-spacing: 0.6px;
 }
 
 .inspiration_text h1 {
@@ -138,7 +136,6 @@ export default {
   /* color: #fff; */
   font-family: "Questrial", sans-serif;
   line-height: 26px;
-  letter-spacing: 0.6px;
   margin-right: 20%;
   margin-left: 20%;
   margin-top: 40px;
@@ -155,7 +152,6 @@ export default {
   text-align: left;
   font-size: 18px;
   line-height: 28px;
-  word-spacing: 1.5px;
 }
 
 footer {
@@ -170,7 +166,6 @@ footer {
 footer h1 {
   font-family: "Antic Slab", serif;
   font-size: 46px;
-  letter-spacing: 0.8px;
   margin-bottom: 20px;
 }
 
@@ -178,7 +173,6 @@ footer p {
   margin-bottom: 20px;
   font-family: "Questrial", sans-serif;
   line-height: 24px;
-  letter-spacing: 0.6px;
 }
 
 footer img {

@@ -95,7 +95,6 @@ export default {
   background-color: #f6fafc;
   font-family: "Antic Slab", serif;
   font-size: 28px;
-  letter-spacing: 0.8px;
 }
 
 .skills_text {
@@ -109,7 +108,6 @@ export default {
   margin-bottom: 80px;
   font-family: "Questrial", sans-serif;
   line-height: 24px;
-  letter-spacing: 0.6px;
 }
 
 .skills_text h1 {
@@ -159,7 +157,6 @@ footer {
 footer h1 {
   font-family: "Antic Slab", serif;
   font-size: 46px;
-  letter-spacing: 0.8px;
   margin-bottom: 20px;
 }
 
@@ -167,7 +164,6 @@ footer p {
   margin-bottom: 20px;
   font-family: "Questrial", sans-serif;
   line-height: 24px;
-  letter-spacing: 0.6px;
 }
 
 footer img {
