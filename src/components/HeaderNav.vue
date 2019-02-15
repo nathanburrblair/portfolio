@@ -21,10 +21,8 @@
 
 // pageYOffset increases as you scroll down the page
 var prevScrollpos = window.pageYOffset
-console.log('previous', prevScrollpos)
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset
-  console.log('current', currentScrollPos)
   if (30 > currentScrollPos) {
     document.getElementById('nav').style.top = '0'
   } else {
