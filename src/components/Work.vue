@@ -16,6 +16,24 @@
       <h1>Here's what I've been working on.</h1>
       <p>This is my most recent work. Each project below has a link to the live site and the GitHub repository.</p>
     </div>
+        <div class="swpc">
+      <img src="../assets/work-swpco.png" alt>
+      <div class="swpc_text" :class="$mq">
+        <h2>Soil & Water Plant Company</h2>
+        <h3>React / Node / Express / PostgreSQL</h3>
+        <p>Soil and Water Plant Company exists only in my imagination, but this is the website I built for them anyway.</p>
+
+        <p>Sticking to my goal of trying something new on each project, I used styled components, route params, and the Intersection Observer API. My primary goal was to create something that showcased a solid visual layout, so I focused primarily on styling.</p>
+      </div>
+      <div class="swpc_buttons">
+        <a href="https://www.soilwaterplantco.com" target="blank">
+          <button class="swpc_website">Visit Soil & Water</button>
+        </a>
+        <a href="https://github.com/nathanburrblair/swpc" target="blank">
+          <button class="swpc_github">GitHub Repo</button>
+        </a>
+      </div>
+    </div>
     <div class="roasted">
       <img src="../assets/work-roasted.png" alt>
       <div class="roasted_text" :class="$mq">
@@ -142,6 +160,36 @@ export default {
   max-width: 50%;
 }
 
+/* Soil and Water */
+
+.swpc {
+  background-color: #899D95;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.swpc_website {
+  background-color: #425055;
+  border: none;
+}
+
+.swpc_website:hover {
+  background-color: #3e4a4f;
+  cursor: pointer;
+}
+
+.swpc_github {
+  background-color: #899D95;
+  border: 1px solid #fff;
+}
+
+.swpc_github:hover {
+  background-color: #6D837A;
+  cursor: pointer;
+}
+
 /* Roasted */
 
 .roasted {
@@ -152,13 +200,13 @@ export default {
   padding-right: 10%;
 }
 
-.roasted img {
+.roasted img, .swpc img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 
-.roasted_text {
+.roasted_text, .swpc_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,17 +220,17 @@ export default {
   margin-top: 40px;
 }
 
-.roasted_text h2 {
+.roasted_text h2, .swpc h2 {
   font-size: 36px;
   margin-bottom: 20px;
 }
 
-.roasted_text p {
+.roasted_text p, .swpc p {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
-.roasted button {
+.roasted button, .swpc button {
   color: #fff;
   font-family: "Questrial", sans-serif;
   font-size: 18px;
@@ -196,7 +244,7 @@ export default {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.roasted_buttons {
+.roasted_buttons, .swpc_buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,16 +255,16 @@ export default {
   border: none;
 }
 
-.roasted_website:focus {
+.roasted_website:focus, .swpc_website:focus {
   outline: 0;
 }
 
-.roasted_website:hover {
+.roasted_website:hover, .swpc_website:hover {
   background-color: #3e4a4f;
   cursor: pointer;
 }
 
-.roasted_website:active {
+.roasted_website:active, .swpc_website:active {
   transform: translateY(2px);
 }
 
@@ -225,7 +273,7 @@ export default {
   border: 1px solid #fff;
 }
 
-.roasted_github:focus {
+.roasted_github:focus, .swpc_github:focus {
   outline: 0;
 }
 
@@ -234,7 +282,7 @@ export default {
   cursor: pointer;
 }
 
-.roasted_github:active {
+.roasted_github:active .swpc_github:active {
   transform: translateY(2px);
 }
 

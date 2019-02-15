@@ -4,6 +4,8 @@ import Home from '@/components/Home'
 import HeaderNav from '@/components/HeaderNav'
 import Work from '@/components/Work'
 import Skills from '@/components/Skills'
+import Inspiration from '@/components/Inspiration'
+import Testing from '@/components/Testing'
 import VueMq from 'vue-mq'
 
 Vue.use(Router)
@@ -37,6 +39,16 @@ export default new Router({
       path: '/skills',
       name: 'Skills',
       component: Skills
+    },
+    {
+      path: '/inspiration',
+      name: 'Inspiration',
+      component: Inspiration
+    },
+    {
+      path: '/testing',
+      name: 'Testing',
+      component: Testing
     }
   ],
   scrollBehavior (to, from, savedPosition) {

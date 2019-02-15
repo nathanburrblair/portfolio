@@ -19,10 +19,13 @@
 
 <script>
 
+// pageYOffset increases as you scroll down the page
 var prevScrollpos = window.pageYOffset
+console.log('previous', prevScrollpos)
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset
-  if (prevScrollpos > currentScrollPos) {
+  console.log('current', currentScrollPos)
+  if (30 > currentScrollPos) {
     document.getElementById('nav').style.top = '0'
   } else {
     document.getElementById('nav').style.top = '-16vh'
