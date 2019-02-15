@@ -415,8 +415,8 @@ footer img {
 }
 
 .work_text.sm {
-  margin-right: 14%;
-  margin-left: 14%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .work_text.sm h1 {
