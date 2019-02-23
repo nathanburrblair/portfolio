@@ -20,9 +20,11 @@
 <script>
 
 // pageYOffset increases as you scroll down the page
+// eslint-disable-next-line
 var prevScrollpos = window.pageYOffset
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset
+  // eslint-disable-next-line
   if (30 > currentScrollPos) {
     document.getElementById('nav').style.top = '0'
   } else {

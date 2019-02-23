@@ -6,6 +6,7 @@ import Work from '@/components/Work'
 import Skills from '@/components/Skills'
 import Inspiration from '@/components/Inspiration'
 import Testing from '@/components/Testing'
+import Javascript30 from '@/components/Javascript30'
 import VueMq from 'vue-mq'
 
 Vue.use(Router)
@@ -49,6 +50,11 @@ export default new Router({
       path: '/testing',
       name: 'Testing',
       component: Testing
+    },
+    {
+      path: '/javascript30',
+      name: 'Javascript30',
+      component: Javascript30
     }
   ],
   scrollBehavior (to, from, savedPosition) {
