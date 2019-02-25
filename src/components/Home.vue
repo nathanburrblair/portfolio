@@ -29,6 +29,7 @@
       <router-link to="/work">
         <button>See My Work</button>
       </router-link>
+      <div class="icon_attr">Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </div>
     <a name="contact">
       <footer :class="$mq">
@@ -155,18 +156,29 @@ export default {
   margin-bottom: 20px;
 }
 
-.body_text_2 button, .seo_text button {
+.body_text_2 button {
   color: #fff;
   font-family: "Questrial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   padding: 20px 40px 20px 40px;
-  margin-top: 40px;
+  margin: 40px 0 60px 0;
   border-radius: 3px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   background-color: #62a295;
   border: none;
+}
+
+.icon_attr {
+  color: #B2BAC2;
+}
+
+.icon_attr a {
+  color: #B2BAC2;
+}
+.icon_attr a:visited {
+  color: #B2BAC2;
 }
 
 .experience {
