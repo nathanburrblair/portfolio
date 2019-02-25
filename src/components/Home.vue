@@ -4,7 +4,7 @@
     <div class="top">
       <div class="welcome" :class="$mq">
         <h1>Hi. I'm Nathan.</h1>
-        <p>A web developer</p>
+        <p>A search marketer and web developer</p>
       </div>
       <div class="hero">
         <img src="../assets/MountainHome.svg" alt>
@@ -14,20 +14,18 @@
       <!-- <h1>This is me.</h1> -->
       <!-- <img src='../assets/headshotsvg.svg' alt=""> -->
       <img src="../assets/headshotsquare.svg" alt>
-      <p>I'm a web developer based in Salt Lake City, Utah. After spending the last decade working in SEO and digital marketing, I decided to start something new by enrolling in a web developer bootcamp. It was a good beginning to what I hope will be a long and fulfilling career. When I'm not in front of my computer, you might find me exploring the Wasatch, riding a bike, or reading a good book.</p>
+      <p>I'm a search marketer / web developer based in Salt Lake City, Utah. I've spent the last decade working in SEO and digital marketing, and recently I've learned how build websites with the PERN stack. When I'm not in front of my computer, you might find me exploring the Wasatch, riding a bike, or reading a good book.</p>
     </div>
     <!-- <div class='dots' :class="$mq"></div> -->
     <a name="skills"><div class="experience">
-      <img src="../assets/chat.svg" alt>
-      <!-- <img src='../assets/html-5.svg' alt="">
-        <img src='../assets/css.svg' alt="">
-        <img src='../assets/javascript.svg' alt="">
-        <img src='../assets/react.svg' alt="">
-        <img src='../assets/nodejs.svg' alt="">
-      <img src='../assets/github.svg' alt="">-->
+    <div class="seo_text" :class="$mq">
+      <img src="../assets/browserr.svg" alt>
+      <p>Over the course of my career, I've managed a lot of search marketing campaigns. I'm experienced in keyword research, competitive analysis, on-site and off-site optimization, and content marketing. My experience in technical SEO led me to explore web development, which has proved to be an exciting and challenging process.</p>
+    </div>
     </div></a>
     <div class="body_text_2" :class="$mq">
-      <p>I have experience with HTML, CSS, and Javascript. At DevMountain (the bootcamp I mentioned earlier), I built two projects with React, Node.js, PostgreSQL, and Express. I also designed and built this very portfolio with Vue.js. There are a lot of languages I haven't got to yet, but I'm excited to learn.</p>
+      <img src="../assets/chat.svg" alt>
+      <p>I have experience with HTML, CSS, and Javascript. I've built projects with React, Node.js, PostgreSQL, and Express. I also designed and built this very portfolio with Vue.js. Web development is such an exciting field. My intention is to continue learning, exploring, and building cool things along the way.</p>
       <router-link to="/work">
         <button>See My Work</button>
       </router-link>
@@ -136,7 +134,12 @@ export default {
   margin-bottom: 24px;
 }
 
-.body_text_2 {
+.body_text_2 img {
+  height: 80px;
+  margin-bottom: 24px;
+}
+
+.body_text_2, .seo_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,11 +151,11 @@ export default {
   line-height: 24px;
 }
 
-.body_text_2 h1 {
+.body_text_2 h1, .seo_text h1 {
   margin-bottom: 20px;
 }
 
-.body_text_2 button {
+.body_text_2 button, .seo_text button {
   color: #fff;
   font-family: "Questrial", sans-serif;
   font-size: 18px;
@@ -170,9 +173,9 @@ export default {
   margin-top: 40px;
 }
 
-.experience img {
+.seo_text img {
   height: 80px;
-  margin: 20px;
+  margin-bottom: 24px;
 }
 
 footer {
@@ -217,7 +220,7 @@ footer img {
   margin-left: 14%;
 }
 
-.body_text_2.sm {
+.body_text_2.sm, .seo_text.sm {
   margin-right: 14%;
   margin-left: 14%;
 }
@@ -234,7 +237,7 @@ footer.sm p {
   margin-left: 20%;
 }
 
-.body_text_2.md {
+.body_text_2.md, .seo_text.md {
   margin-right: 20%;
   margin-left: 20%;
 }
@@ -256,7 +259,7 @@ footer.md p {
   margin-left: 30%;
 }
 
-.body_text_2.lg {
+.body_text_2.lg, .body_text.lg {
   margin-right: 30%;
   margin-left: 30%;
 }

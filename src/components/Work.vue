@@ -14,7 +14,7 @@
     </div>
     <div class="work_text" :class="$mq">
       <h1>Here's what I've been working on.</h1>
-      <p>This is my most recent work. Each project below has a link to the live site and the GitHub repository. After you've browsed my work below, check out <router-link to='/javascript30'><span class="js30link">my take on the Javascript30</span></router-link>.</p>
+      <p>This is my most recent development work. Each project below has a link to the live site and the GitHub repository. After you've browsed my work below, check out <router-link to='/javascript30'><span class="js30link">my take on the Javascript30</span></router-link>.</p>
     </div>
         <div class="swpc">
       <img src="../assets/work-swpco.png" alt>
